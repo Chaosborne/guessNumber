@@ -36,7 +36,6 @@ let getRndInteger = function (min1, max1, min2, max2) {
   );
 };
 let rndInt = getRndInteger(1, 10, 1, 2);
-// console.log(rndInt);
 
 checkBtn.addEventListener('click', () => {
   attempt++;
@@ -69,9 +68,7 @@ checkBtn.addEventListener('click', () => {
 restartBtn.addEventListener('click', () => {
   score = 0;
   attempt = 0;
-  console.log(`Score is: ${score}`);
   rndInt = getRndInteger(1, 10, 1, 2);
-  console.log(`The hidden is: ${rndInt}`);
   checkBtn.disabled = false;
   guessMessage.textContent = 'Начни угадывать';
   document.body.style.backgroundColor = 'black';
