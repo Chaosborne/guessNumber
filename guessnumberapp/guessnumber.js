@@ -36,6 +36,7 @@ let getRndInteger = function (min1, max1, min2, max2) {
   );
 };
 let rndInt = getRndInteger(1, 10, 1, 2);
+// console.log(rndInt);
 
 checkBtn.addEventListener('click', () => {
   attempt++;
@@ -57,7 +58,10 @@ checkBtn.addEventListener('click', () => {
         highScore.textContent = score;
       }
     } else {
-      guessMessage.textContent = 'Попробуйте еще раз!';
+      if (inputNumber > rndInt) {
+        guessMessage.textContent = 'Введённое число больше загаданного';
+      } else if (inputNumber < rndInt)
+        guessMessage.textContent = 'Введённое число меньше загаданного';
     }
   }
 });

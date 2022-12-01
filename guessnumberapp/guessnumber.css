@@ -14,7 +14,8 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #fff;
   background-color: rgb(0, 0, 0);
-  /*  background-color: rgb(9, 250, 21); */
+  min-height: 90vh;
+  /* background-color: rgb(9, 250, 21); */
 }
 
 /* Layout Styles */
@@ -116,4 +117,84 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 730px) {
+  .left {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 610px) {
+  main {
+    height: 48vh;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .right {
+    width: 50rem;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    top: 12rem;
+    line-height: 1.4em;
+  }
+
+  header {
+    border-bottom: 1px solid;
+    height: 25rem;
+  }
+
+  main {
+    height: 39vh;
+  }
+
+  .question {
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    padding: 1rem 0rem;
+    transform: translate(-50%, -6rem);
+    top: 29rem;
+  }
+
+  .between {
+    top: 17rem;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    right: 0;
+    text-align: center;
+    /* left: 6%; */
+  }
+  .again {
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .left {
+    position: absolute;
+    top: 32rem;
+  }
+
+  .right {
+    width: 38rem;
+    position: absolute;
+    top: 50rem;
+  }
+
+  .label-highscore,
+  .guess-message {
+    line-height: 22px;
+  }
+
+  .guess-message {
+    margin-bottom: 2em;
+  }
 }
