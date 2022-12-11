@@ -63,7 +63,7 @@ checkBtn.addEventListener('click', () => {
 restartBtn.addEventListener('click', () => {
   score = 0;
   attempt = 0;
-  // rndInt = getRndInteger(1, 10, 1, 2);
+  // rndInt = getRndInteger(1, 20);
   rndInt = Math.trunc(Math.random() * 20) + 1;
   console.log(rndInt);
   checkBtn.disabled = false;
