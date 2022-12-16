@@ -10,3 +10,7 @@ Stack i used:
 -------------
 * vanilla JavaScript
 * HTML / CSS
+
+Yoou can play it here:
+----------------------
+http://himmelen.space/guessnumber.html
