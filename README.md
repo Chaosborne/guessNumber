@@ -1,7 +1,7 @@
 # guessNumber
 A game where the user has to guess the number given by the computer
 
-My work here:
+My role here:
 -------------
 * complete game development from scratch
 * making layout adaptive
