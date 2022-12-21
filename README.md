@@ -6,7 +6,7 @@ My work here:
 * complete game development from scratch
 * making layout adaptive
 
-Stack i used:
+Stack I used:
 -------------
 * vanilla JavaScript
 * HTML / CSS
